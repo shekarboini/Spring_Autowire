@@ -1,0 +1,19 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans default-dependency-check="all">
+	<bean id="address" class="com.hexa.domain.Address" >
+		<property name="streetNo" value="216" />
+		<property name="area" value="BabyNagar"></property>
+		<property name="city" value="Chennai" />
+		<property name="state" value="TamilNadu" />
+		<property name="country" value="India" />
+	</bean>
+	<bean id="employee" class="com.hexa.domain.Employee" autowire="autodetect">
+		<property name="eid" value="459" />
+		<property name="empName" value="Shekar" />
+		<!-- <property name="address" ref="address"></property> -->
+	</bean>
+
+
+</beans>
